@@ -128,6 +128,7 @@ describe("Scenario Login OrangeHRM", () => {
     cy.get('[name="password"]').tab();
     cy.get("button[type='submit']").should("have.focus");
   });
+  
   afterEach(() => {
     // Clear session data
     cy.clearCookies();
